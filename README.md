@@ -1,8 +1,31 @@
 IPython to Pelican Converter
 ============================
 
-Converter for IPython notebook markdown and code to Pelican markdown and code blocks (pre-alpha).
+Converter for IPython notebook markdown and code to Pelican markdown and code blocks.
+
+##### Usage as standalone
+
+    $ ipytopelican.py infile.ipynb
+
+or
+
+    $ ipytopelican.py infile.ipynb -o outfile.md
 
 
+##### Usage as library
 
-    $> ipytopelican.py infile outfile
+```python
+from ipytopelican import convert
+
+convert('infile.ipynb')
+```
+
+
+You can set up your notebook with Pelican metadata by putting it in the first cell:
+
+    Title: My Notebook, Automatically Published
+    Date: 2014-04-11 5:30
+    Category: Experiments
+    Tags: data science
+
+
