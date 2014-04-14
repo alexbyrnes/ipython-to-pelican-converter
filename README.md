@@ -1,8 +1,6 @@
 IPython to Pelican Converter
 ============================
 
-Converter for IPython notebook markdown and code to Pelican markdown and code blocks.
-
 ##### Usage as standalone
 
     $ ipytopelican.py infile.ipynb
